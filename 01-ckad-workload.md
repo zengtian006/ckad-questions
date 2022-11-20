@@ -77,7 +77,7 @@ Examples:
 
 kubectl run nginx --image=nginx
 
-# Start a hazelcast pod and let the container expose port 5701
+# Start a hazelcast pod and let the container expose port  
 
 kubectl run hazelcast --image=hazelcast/hazelcast --port=5701
 
@@ -199,13 +199,13 @@ Examples:
   kubectl create deployment my-dep --image=busybox
 
   # Create a deployment with a command
-  kubectl create deployment my-dep --image=busybox -- date
+  kubectl create deployment my-dep --image=nginx -- date
 
   # Create a deployment named my-dep that runs the nginx image with 3 replicas
   kubectl create deployment my-dep --image=nginx --replicas=3 ### This example matches most closely to the question.
 
-  # Create a deployment named my-dep that runs the busybox image and expose port 5701
-  kubectl create deployment my-dep --image=busybox --port=5701
+  # Create a deployment named my-dep that runs the busybox image and expose port 80
+  kubectl create deployment my-dep --image=nginx --port=80
 ```
 
 </p>
